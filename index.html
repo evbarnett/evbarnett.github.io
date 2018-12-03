@@ -3,17 +3,23 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
 		
-		<style type="text/css" media="screen and (min-device-width: 900px)">
+		<style type="text/css"">
 			.blog-content {
-				max-width: 840px;
+				max-width: 900px;
 				padding: 6px 6px 6px 6px;
 				margin: auto;
 			}
 			.blog-breadcrumb {
 				text-align: left;
-				padding: 1vw
+				padding: 1vw;
+			}
+			.remove-bottom {
+				margin-bottom: 0px; 
+				padding-bottom: 0px;
 			}
 			.remove-top {
 				margin-top: 16px; 
@@ -22,23 +28,14 @@
 			.extra-pad {
 				margin-bottom: 8px;
 			}
-		</style>
-		<style type="text/css" media="screen and (min-width: 501px) and (max-width: 900px)">
-			.blog-content {
-				max-width: 90%;
-				padding: 6px 6px 6px 6px;
-				margin: auto;
+			h2 {
+				font-family: 'Crimson Text', serif;
 			}
-			.blog-breadcrumb {
-				text-align: left;
-				padding: 1vw
+			.i-pf {
+				font-family: 'Crimson Text', serif;
 			}
-			.remove-top {
-				margin-top: 16px; 
-				padding-top: 16px;
-			}
-			.extra-pad {
-				margin-bottom: 8px;
+			.i-os {
+				font-family: 'Open Sans', sans-serif;
 			}
 		</style>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
@@ -46,33 +43,22 @@
 	<body>
 		<div class="blog-breadcrumb">
 			<ul class="uk-breadcrumb">
-    			<li>backprop.io</li>
+    			<li class="i-pf">backprop.io</li>
 			</ul>
 		</div>
-    
 		<div class="blog-content">
-		<p>IN CONSTRUCTION</p>
-    		<!-- CARD -->
-    		<div class="uk-card uk-card-default uk-card-body" href="#article title">
-    			<h3 class="remove-bottom">This Article Was The Most Recent</h3>
-    			<b><i>31 October 2018</i></b><br>
-    			<p>Here is the first few words in the article, which are displayed in the card until a certain number is...</p>
-    		</div>
 
-		<!-- ARTCLES -->
-			
-    		<h3 class="remove-bottom"><span>A Programmer's Guide to Making Fake Article Titles</span></h3> 
-    		<i>30 October 2018</i><br>
-    		Here is the first few words in the article, which are displayed in the card until a certain number is...
+			<h1 class="i-pf"> Articles </h1>
 
-			<h3 class="remove-bottom remove-top"><span>The Android Ecosystem: Pt. 3</span></h3>
-    		<i>29 October 2018</i><br>
-    		Here is the first few words in the article, which are displayed in the card until a certain number is...
+			<!-- ARTCLE -->
+
+    		<h2 class="remove-bottom"><span>A Programmer's Guide to Making Fake Article Titles</span></h3> 
+    		<i class="i-pf">29 October 2018</i><i class="i-pf"> -- Python, Lua, WxWidgets</i><br>
+
+			<h2 class="remove-bottom remove-top"><span>The Android Ecosystem: Pt. 3</span></h3>
+    		<i class="i-pf">29 October 2018</i><i class="i-pf"> -- Android, NDK, C++</i><br>
 
 		<p></p>
-
-		<!-- scroll up -->
-		<a class="uk-button uk-button-primary" href="#top_button" uk-scroll>Scroll up</a>
 
 		<p class="uk-article-meta"> This site was built with love by <a href="https://www.github.com/evbarnett"><font color="blue">@evbarnett</font> and uses <a href="https://enlighterjs.org/"><font color="blue">EnlighterJS</font></a> and <a href="https://getuikit.com/"><font color="blue">UIKit</font></a> <p>
 		
