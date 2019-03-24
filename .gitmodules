@@ -1,0 +1,6 @@
+[submodule "EnlighterJS"]
+	path = EnlighterJS
+	url = https://github.com/EnlighterJS/EnlighterJS
+[submodule "insulator"]
+	path = insulator
+	url = https://github.com/evbarnett/insulator
