@@ -1,43 +1,96 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-		<link rel="stylesheet" type="text/css" href="EnlighterJS-2.12.0/Build/EnlighterJS.min.css" />
-		<script type="text/javascript" src="EnlighterJS-2.12.0/Resources/MooTools.min.js"></script>
-		<script type="text/javascript" src="EnlighterJS-2.12.0/Build/EnlighterJS.min.js"></script>
-		
-		<style type="text/css">
-			.blog-content {
-				max-width: 900px;
-				padding: 6px 6px 6px 6px;
-				margin: auto;
-			}
-			.blog-breadcrumb {
-				text-align: left;
-				padding: 1vw;
-			}
-			.remove-bottom {
-				margin-bottom: 0px; 
-				padding-bottom: 0px;
-			}
-			.remove-top {
-				margin-top: 16px; 
-				padding-top: 16px;
-			}
-		</style>
-		<meta name="EnlighterJS" content="Advanced javascript based syntax highlighting" data-language="javascript" data-indent="2" data-selector-block="pre" data-selector-inline="code"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-	</head>
-	<body class="">
-		
-		<div class="blog-content">
 
-    		<h1 class="remove-bottom">Example Article</h1> 
-    		<i>Dec 21, 2018</i><i> -- Python, HTML</i><br>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" type="text/css" href="EnlighterJS-2.12.0/Build/EnlighterJS.min.css" />
+    <script type="text/javascript" src="EnlighterJS-2.12.0/Resources/MooTools.min.js"></script>
+    <script type="text/javascript" src="EnlighterJS-2.12.0/Build/EnlighterJS.min.js"></script>
 
-			<p>Here is an example article</p>
+    <style type="text/css">
+        .blog-content {
+            max-width: 900px;
+            padding: 6px 6px 6px 6px;
+            margin: auto;
+        }
+
+        .blog-breadcrumb {
+            text-align: left;
+            padding: 1vw;
+        }
+
+        .remove-bottom {
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        .remove-top {
+            margin-top: 16px;
+            padding-top: 16px;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .navbar,
+        .navbar-spacer {
+            display: block;
+            width: 100%;
+            height: 6.5rem;
+            background: #fff;
+            z-index: 99;
+            border-bottom: 1px solid #eee;
+        }
+
+        .navbar-list {
+            list-style: none;
+            margin-bottom: 0;
+        }
+
+        .navbar-item {
+            position: relative;
+            float: left;
+            margin-bottom: 0;
+        }
+
+        .navbar-link {
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .2rem;
+            margin-right: 35px;
+            text-decoration: none;
+            line-height: 6.5rem;
+            color: #222;
+        }
+
+    </style>
+    <meta name="EnlighterJS" content="Advanced javascript based syntax highlighting" data-language="javascript" data-indent="2" data-selector-block="pre" data-selector-inline="code" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+</head>
+
+<body>
+
+    <div class="navbar-spacer">
+        <div class="container">
+            <ul class="navbar-list">
+                <li class="navbar-item"><a class="navbar-link" href="#todo">Blog</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="#todo">About</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="blog-content">
+
+        <h1 class="remove-bottom">Example Article</h1>
+        <i>Dec 21, 2018</i><i> -- Python, HTML</i><br>
+
+        <p>Here is an example article</p>
 
 <p><em>This</em> was <strong>built</strong> with <strong><em>Insulator</em></strong></p>
 
@@ -47,9 +100,12 @@ public static void main(String[] args) {
 }
 </code></pre>
 
-            
-            <p class="uk-article-meta"> This site was built by <a href="https://www.github.com/evbarnett"><font color="blue">@evbarnett</font></a></p>
-		
-		</div>
-	</body>
+
+        <p class="uk-article-meta"> This site was built by <a href="https://www.github.com/evbarnett">
+                <font color="blue">@evbarnett</font>
+            </a></p>
+
+    </div>
+</body>
+
 </html>
